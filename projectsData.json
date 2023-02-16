@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Framer Motion Theme Switcher",
+    "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas ipsa rem labore dolores dolor mollitia a laudantium odio ipsam",
+    "description": "long description",
+    "image": "avatar.webp",
+    "techstack": ["react", "framer-motion"]
+  },
+  {
+    "id": 2,
+    "title": "test2",
+    "summary": "summary",
+    "description": "long description",
+    "image": "avatar.webp",
+    "techstack": ["react", "framer-motion", "vue"]
+  },
+  {
+    "id": 1,
+    "title": "Framer Motion Theme Switcher",
+    "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas ipsa rem labore dolores dolor mollitia a laudantium odio ipsam",
+    "description": "long description",
+    "image": "avatar.webp",
+    "techstack": ["react", "framer-motion", "vue"]
+  },
+  {
+    "id": 1,
+    "title": "Framer Motion Theme Switcher",
+    "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas ipsa rem labore dolores dolor mollitia a laudantium odio ipsam",
+    "description": "long description",
+    "image": "avatar.webp",
+    "techstack": ["react", "framer-motion", "vue"]
+  }
+]
