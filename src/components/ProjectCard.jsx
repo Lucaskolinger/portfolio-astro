@@ -1,25 +1,25 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
+import { useStore } from "@nanostores/react";
+import { selectedModalId } from "../modalStore";
 
-export default function ProjectCard({ setSelectedCard, project }) {
-  const [isZoomed, setIsZoomed] = useState(false);
-
+export default function ProjectCard({ project }) {
+  const $selectedModalId = useStore(selectedModalId);
   return (
-    <article
+    <motion.article
+      onClick={selectedModalId.set(true)}
+      whileHover={{
+        scale: 1.025,
+        transition: { duration: 0.2 },
+      }}
+      whileTap={{
+        scale: 0.95,
+      }}
       className="aspect-square bg-neutral-light rounded-2xl text-primary-light cursor-pointer pt-2 px-2 "
-      onClick={setSelectedCard(project)}
     >
-      <motion.img
-        whileHover={{
-          scale: 1.025,
-          transition: { duration: 0.2 },
-        }}
-        whileTap={{
-          scale: 0.95,
-        }}
+      <img
         src={project.image}
         alt="Project Image"
-        className=" h-32 w-full rounded-2xl"
+        className=" aspect-[16/9] w-full rounded-2xl"
       />
       <h1 className="text-xl font-deco mt-4 px-2">{project.title}</h1>
       <p className="font-main mt-2 font-light text-primary-muted px-2">
@@ -35,6 +35,6 @@ export default function ProjectCard({ setSelectedCard, project }) {
           </div>
         ))}
       </div>
-    </article>
+    </motion.article>
   );
 }

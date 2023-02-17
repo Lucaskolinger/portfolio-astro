@@ -1,5 +1,5 @@
 ---
-import MainGrid from "../components/MainGrid.astro";
+import MainGrid from "../components/MainGrid";
 ---
 
 <!DOCTYPE html>
@@ -17,6 +17,6 @@ import MainGrid from "../components/MainGrid.astro";
     />
   </head>
   <body class="bg-neutral-dark">
-    <MainGrid />
+    <MainGrid client:idle />
   </body>
 </html>
