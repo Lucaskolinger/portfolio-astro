@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { useStore } from "@nanostores/react";
-import { selectedModalId } from "../modalStore";
+import { selectedModal } from "../modalStore";
 
 export default function ProjectCard({ project }) {
-  const $selectedModalId = useStore(selectedModalId);
   return (
     <motion.article
-      onClick={selectedModalId.set(true)}
+      onClick={() => {
+        selectedModal.set(project);
+      }}
       whileHover={{
         scale: 1.025,
         transition: { duration: 0.2 },
@@ -16,7 +16,7 @@ export default function ProjectCard({ project }) {
       }}
       className="aspect-square bg-neutral-light rounded-2xl text-primary-light cursor-pointer pt-2 px-2 "
     >
-      <img
+      <motion.img
         src={project.image}
         alt="Project Image"
         className=" aspect-[16/9] w-full rounded-2xl"

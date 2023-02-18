@@ -22,7 +22,7 @@ export default function Welcome() {
           <p className="text-primary-light font-semibold">
             Hi, my name is Lucas.
           </p>
-          <h1 className="text-accent ">Frontend Developer</h1>
+          <h1 className="text-accent ">Frontend Web Developer</h1>
         </div>
       </div>
       <p className="text-primary-muted font-light font-main text-base w-4/5 max-w-lg mt-12">
