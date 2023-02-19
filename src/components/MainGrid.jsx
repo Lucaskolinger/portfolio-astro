@@ -4,7 +4,7 @@ import Modal from "./Modal";
 
 export default function MainGrid() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 bg-neutral-dark h-screen">
+    <div className="grid grid-cols-1 bg-neutral-dark lg:grid-cols-2 lg:h-screen justify-items-center">
       <Welcome />
       <Aside />
       <Modal />

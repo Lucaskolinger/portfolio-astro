@@ -1,8 +1,23 @@
 import { motion } from "framer-motion";
 
+const slideInVariants = {
+  hidden: {
+    opacity: 0,
+    translateX: -10,
+  },
+  visible: {
+    opacity: 1,
+    translateX: 0,
+    transition: {
+      duration: 1,
+      delay: 0.5,
+    },
+  },
+};
+
 export default function Welcome() {
   return (
-    <main className="flex flex-col  items-center  border-accent">
+    <main className="flex flex-col items-center  w-full">
       <div className="mt-16 flex h-max flex-col gap-8 items-center md:flex-row max-w-lg w-4/5">
         <motion.img
           whileHover={{
@@ -20,28 +35,17 @@ export default function Welcome() {
         />
         <div className="font-deco text-3xl">
           <motion.p
-            initial={{ opacity: 0, translateX: -10 }}
-            animate={{
-              opacity: 1,
-              translateX: 0,
-            }}
-            transition={{
-              duration: 1,
-            }}
+            variants={slideInVariants}
+            initial="hidden"
+            animate="visible"
             className="text-primary-light font-semibold"
           >
             Hi, my name is Lucas.
           </motion.p>
           <motion.h1
-            initial={{ opacity: 0, translateX: -10 }}
-            animate={{
-              opacity: 1,
-              translateX: 0,
-            }}
-            transition={{
-              duration: 1,
-              delay: 0.5,
-            }}
+            variants={slideInVariants}
+            initial="hidden"
+            animate="visible"
             className="text-accent font-semibold mt-2"
           >
             Frontend Web Developer
@@ -49,12 +53,12 @@ export default function Welcome() {
         </div>
       </div>
       <p className="text-primary-muted font-normal font-main text-base w-4/5 max-w-lg mt-12">
-        For more than three years now I am taking action in making the web more
-        beautiful and more functional Tought myself how to code Lorem ipsum
-        dolor, sit amet consectetur adipisicing elit. Odio provident facilis
-        ipsam ullam dignissimos inventore a atque ab reiciendis nesciunt unde,
-        sit libero incidunt nisi nulla sint quisquam minima alias! Custom
-        solutions for the web
+        For more than three years now I'm making the web more beautiful and more
+        functional Tought myself how to code Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Odio provident facilis ipsam ullam
+        dignissimos inventore a atque ab reiciendis nesciunt unde, sit libero
+        incidunt nisi nulla sint quisquam minima alias! Custom solutions for the
+        web
       </p>
     </main>
   );

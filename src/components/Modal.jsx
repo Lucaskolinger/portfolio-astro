@@ -69,7 +69,7 @@ export default function Modal() {
                 target="_blank"
                 whileHover={{ scale: 1.2 }}
                 className="w-8"
-                href=""
+                href={$selectedModal.link}
               >
                 <Icon
                   icon="material-symbols:link-sharp"
@@ -81,7 +81,7 @@ export default function Modal() {
                 target="_blank"
                 whileHover={{ scale: 1.2 }}
                 className="w-8"
-                href=""
+                href={$selectedModal.github}
               >
                 <Icon icon="mdi:github" width="1.5rem" color="white" />
               </motion.a>

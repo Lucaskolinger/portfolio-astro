@@ -1,21 +1,21 @@
 [
   {
     "id": 1,
-    "title": "Framer Motion Theme Switcher",
-    "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas ipsa rem labore dolores dolor mollitia a laudantium odio ipsam",
+    "title": "Pull light switch with Framer Motion",
+    "summary": "An experimental animation project where you can pull down the moon like a light switch. Once released it will jump back and switch the color-theme",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquam in ut enim quae fugiat nulla officia quia officiis at eaque soluta ipsum quis ratione ducimus temporibus, harum et! Optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas ipsa rem labore dolores dolor mollitia a laudantium odio ipsam Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas ipsa rem labore dolores dolor mollitia a laudantium odio ipsam Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas ipsa rem labore dolores dolor mollitia a laudantium odio ipsam Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas ipsa rem labore dolores dolor mollitia a laudantium odio ipsam",
-    "image": "avatar.webp",
+    "image": "projects/moon.webp",
     "techstack": [
       ["React", "skill-icons:react-dark"],
       ["Vite", "skill-icons:vite-dark"],
       ["Framer-motion", "ph:framer-logo"]
     ],
-    "link": "www.google.de",
-    "github": "www.moin.de"
+    "link": "https://moon-switch.netlify.app",
+    "github": "https://github.com/Lucaskolinger/framer-motion-darkmode-moon"
   },
   {
     "id": 2,
-    "title": "Casablanca Cover-Band",
+    "title": "Casablanca Coverband Website",
     "summary": "Personal website for friends of mine. Live-cover-band Lorem ipsum dosicing elit. Sequi quas ipsa rem labore dolores dolor mollitia a laudantium",
     "description": "long description",
     "image": "projects/casablanca.webp",
