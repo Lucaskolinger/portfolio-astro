@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useStore } from "@nanostores/react";
 import { selectedModal } from "../modalStore";
+import { Icon } from "@iconify/react";
 
 export default function Modal() {
   const $selectedModal = useStore(selectedModal);
@@ -36,34 +37,56 @@ export default function Modal() {
             y: 0,
           }}
           transition={{
-            duration: 0.25,
+            duration: 0.15,
             ease: "easeInOut",
           }}
-          className="w-full relative max-w-[37rem] cursor-default h-[37rem] z-10 bg-neutral-light text-primary-muted rounded-2xl"
+          className="w-full relative max-w-[40rem] cursor-default z-10 bg-neutral-light text-primary-muted rounded-2xl"
         >
-          <svg
+          <motion.div
+            whileHover={{ scale: 1.1, opacity: 1 }}
+            className="absolute top-4 right-4 cursor-pointer opacity-50"
             onClick={() => {
               selectedModal.set(null);
             }}
-            width="2rem"
-            viewBox="0 0 24 24"
-            className="absolute aspect-square top-4 right-4 cursor-pointer bg-primary-muted stroke-black rounded-full"
           >
-            <path
-              fill="currentColor"
-              d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59L7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12L5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
+            <Icon
+              icon="ic:round-close"
+              width="2rem"
+              color="hsla(213, 19%, 9%, 1)"
             />
-          </svg>
+          </motion.div>
           <img
             src={$selectedModal.image}
             alt=""
-            className="w-full rounded-t-2xl aspect-[16/9]"
+            className="w-full rounded-t-2xl aspect-[16/7]"
           />
-          <div className="overflow-y-scroll h-1/3">
-            <h1 className="text-2xl text-primary-light font-deco mt-4 mx-4">
-              {$selectedModal.title}
-            </h1>
-            <p className="mx-4 mt-2 font-main font-normal max-w-lg">
+          <div className="overflow-y-scroll h-64 mb-16">
+            <div className="flex items-center gap-8 mt-8 ml-8">
+              <h1 className="text-2xl text-primary-light font-deco font-semibold mr-8">
+                {$selectedModal.title}
+              </h1>
+              <motion.a
+                target="_blank"
+                whileHover={{ scale: 1.2 }}
+                className="w-8"
+                href=""
+              >
+                <Icon
+                  icon="material-symbols:link-sharp"
+                  width="1.8rem"
+                  color="white"
+                />
+              </motion.a>
+              <motion.a
+                target="_blank"
+                whileHover={{ scale: 1.2 }}
+                className="w-8"
+                href=""
+              >
+                <Icon icon="mdi:github" width="1.5rem" color="white" />
+              </motion.a>
+            </div>
+            <p className="mx-8 mt-4 font-main font-normal text-base max-w-md">
               {$selectedModal.description}
             </p>
           </div>

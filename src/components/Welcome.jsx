@@ -19,18 +19,42 @@ export default function Welcome() {
           alt="Lucas Kolinger | Frontend Web Developer"
         />
         <div className="font-deco text-3xl">
-          <p className="text-primary-light font-semibold">
+          <motion.p
+            initial={{ opacity: 0, translateX: -10 }}
+            animate={{
+              opacity: 1,
+              translateX: 0,
+            }}
+            transition={{
+              duration: 1,
+            }}
+            className="text-primary-light font-semibold"
+          >
             Hi, my name is Lucas.
-          </p>
-          <h1 className="text-accent ">Frontend Web Developer</h1>
+          </motion.p>
+          <motion.h1
+            initial={{ opacity: 0, translateX: -10 }}
+            animate={{
+              opacity: 1,
+              translateX: 0,
+            }}
+            transition={{
+              duration: 1,
+              delay: 0.5,
+            }}
+            className="text-accent font-semibold mt-2"
+          >
+            Frontend Web Developer
+          </motion.h1>
         </div>
       </div>
-      <p className="text-primary-muted font-light font-main text-base w-4/5 max-w-lg mt-12">
+      <p className="text-primary-muted font-normal font-main text-base w-4/5 max-w-lg mt-12">
         For more than three years now I am taking action in making the web more
         beautiful and more functional Tought myself how to code Lorem ipsum
         dolor, sit amet consectetur adipisicing elit. Odio provident facilis
         ipsam ullam dignissimos inventore a atque ab reiciendis nesciunt unde,
-        sit libero incidunt nisi nulla sint quisquam minima alias!
+        sit libero incidunt nisi nulla sint quisquam minima alias! Custom
+        solutions for the web
       </p>
     </main>
   );

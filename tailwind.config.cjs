@@ -6,13 +6,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        deco: ['"Advent Pro"', ...defaultTheme.fontFamily.sans],
-        main: ['"Roboto"', ...defaultTheme.fontFamily.sans],
+        deco: ['"Roboto Slab"', ...defaultTheme.fontFamily.sans],
+        main: ['"Roboto Slab"', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         neutral: {
           dark: "hsla(214, 18%, 8%, 1)",
-          light: "hsla(213, 19%, 9%, 1)",
+          light: "hsla(213, 19%, 12%, 1)",
         },
         primary: {
           light: "hsla(30, 4%, 91%, 1)",
