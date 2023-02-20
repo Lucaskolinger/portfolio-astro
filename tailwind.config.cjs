@@ -5,14 +5,18 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      screens: {
+        "-sm": { max: "767px" },
+      },
       fontFamily: {
         deco: ['"Roboto Slab"', ...defaultTheme.fontFamily.sans],
         main: ['"Roboto Slab"', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         neutral: {
-          dark: "hsla(214, 18%, 8%, 1)",
-          light: "hsla(213, 19%, 12%, 1)",
+          dark: "hsl(250, 24%, 9%)",
+          light: "hsl(250, 21%, 11%)",
+          accent: "hsl(245, 17%, 15%)",
         },
         primary: {
           light: "hsla(30, 4%, 91%, 1)",

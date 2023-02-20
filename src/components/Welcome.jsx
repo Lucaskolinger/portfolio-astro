@@ -1,10 +1,6 @@
 import { motion } from "framer-motion";
 
 const slideInVariants = {
-  hidden: {
-    opacity: 0,
-    translateX: -10,
-  },
   visible: {
     opacity: 1,
     translateX: 0,
@@ -29,37 +25,87 @@ export default function Welcome() {
             scale: 0.95,
             borderRadius: "100%",
           }}
+          initial={{ opacity: 0, translateX: -10 }}
+          animate={{
+            opacity: 1,
+            translateX: 0,
+            transition: {
+              duration: 1,
+            },
+          }}
           className="aspect-square rounded-md w-24"
           src="avatar.webp"
           alt="Lucas Kolinger | Frontend Web Developer"
         />
         <div className="font-deco text-3xl">
           <motion.p
-            variants={slideInVariants}
-            initial="hidden"
-            animate="visible"
+            initial={{ opacity: 0, translateX: -10 }}
+            animate={{
+              opacity: 1,
+              translateX: 0,
+              transition: {
+                duration: 1,
+                delay: 0.5,
+              },
+            }}
+            whileHover={{
+              translateX: 5,
+              transition: {
+                duration: 1,
+              },
+            }}
             className="text-primary-light font-semibold"
           >
             Hi, my name is Lucas.
           </motion.p>
           <motion.h1
-            variants={slideInVariants}
-            initial="hidden"
-            animate="visible"
+            initial={{ opacity: 0, translateX: -10 }}
+            animate={{
+              opacity: 1,
+              translateX: 0,
+              transition: {
+                duration: 1,
+                delay: 0.5,
+              },
+            }}
+            whileHover={{
+              translateX: 5,
+              transition: {
+                duration: 1,
+              },
+            }}
             className="text-accent font-semibold mt-2"
           >
             Frontend Web Developer
           </motion.h1>
         </div>
       </div>
-      <p className="text-primary-muted font-normal font-main text-base w-4/5 max-w-lg mt-12">
+      <motion.p
+        initial={{ opacity: 0, translateX: -10 }}
+        animate={{
+          opacity: 1,
+          translateX: 0,
+          transition: {
+            duration: 1,
+            delay: 1,
+          },
+        }}
+        whileHover={{
+          translateX: 5,
+          transition: {
+            duration: 1,
+          },
+        }}
+        className="text-primary-muted font-normal font-main text-base w-4/5 max-w-lg mt-12"
+      >
         For more than three years now I'm making the web more beautiful and more
         functional Tought myself how to code Lorem ipsum dolor, sit amet
         consectetur adipisicing elit. Odio provident facilis ipsam ullam
         dignissimos inventore a atque ab reiciendis nesciunt unde, sit libero
         incidunt nisi nulla sint quisquam minima alias! Custom solutions for the
-        web
-      </p>
+        web I'm one of these guys who doesn't hate CSS (nor Tailwind:)). Web
+        enthusiast.
+      </motion.p>
     </main>
   );
 }

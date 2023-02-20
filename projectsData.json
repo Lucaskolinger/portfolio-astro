@@ -8,7 +8,8 @@
     "techstack": [
       ["React", "skill-icons:react-dark"],
       ["Vite", "skill-icons:vite-dark"],
-      ["Framer-motion", "ph:framer-logo"]
+      ["Framer-motion", "ph:framer-logo"],
+      ["Netlify | SSG", "skill-icons:netlify-dark"]
     ],
     "link": "https://moon-switch.netlify.app",
     "github": "https://github.com/Lucaskolinger/framer-motion-darkmode-moon"
@@ -21,10 +22,11 @@
     "image": "projects/casablanca.webp",
     "techstack": [
       ["Astro", "skill-icons:astro"],
-      ["Vue", "skill-icons:vuejs-dark"]
+      ["Vue", "skill-icons:vuejs-dark"],
+      ["Netlify | SSG", "skill-icons:netlify-dark"]
     ],
-    "link": "www.google.de",
-    "github": "www.moin.de"
+    "link": "https://www.casablanca-band.com",
+    "github": "https://github.com/Lucaskolinger/casablanca-band"
   },
   {
     "id": 3,

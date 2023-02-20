@@ -31,7 +31,7 @@ export default function ProjectCard({ project }) {
           behavior: "smooth",
         });
       }}
-      className="aspect-square bg-neutral-light rounded-2xl text-primary-light cursor-pointer pt-2 pb-4 px-2 "
+      className="aspect-square border-neutral-accent border-[1px] bg-neutral-light hover:bg-neutral-accent transition-all rounded-2xl text-primary-light cursor-pointer pt-2 pb-4 px-2 "
     >
       <div
         ref={scrollImageRef}

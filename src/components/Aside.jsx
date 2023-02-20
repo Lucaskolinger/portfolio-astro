@@ -7,7 +7,7 @@ export default function Aside() {
   return (
     <aside className="flex max-w-[25rem] sm:max-w-[40rem] flex-col items-center lg:h-screen lg:overflow-y-scroll pt-16">
       <h2 className="font-deco text-xl font-semibold w-4/5 text-primary-light">
-        Portfolio projects
+        Latest projects
       </h2>
       <div className="w-4/5 grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
         {projectsData.map((project) => (
