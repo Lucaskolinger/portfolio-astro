@@ -104,7 +104,8 @@ export default function Welcome() {
         dignissimos inventore a atque ab reiciendis nesciunt unde, sit libero
         incidunt nisi nulla sint quisquam minima alias! Custom solutions for the
         web I'm one of these guys who doesn't hate CSS (nor Tailwind:)). Web
-        enthusiast.
+        enthusiast. I tried to find everything I could online about CSS JS, etc;
+        Das Wort Javascript nennen
       </motion.p>
     </main>
   );

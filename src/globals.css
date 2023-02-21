@@ -6,6 +6,10 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+::selection {
+  background-color: hsl(245, 17%, 15%);
+}
+
 @layer utilities {
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
@@ -15,9 +19,13 @@
     scrollbar-width: none; /* Firefox */
   }
   .custom-grid-modal {
+    display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: max-content 30% 1fr;
+    grid-gap: 1rem 2rem;
   }
   .custom-grid-modal-2 {
     grid-template-rows: max-content 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
