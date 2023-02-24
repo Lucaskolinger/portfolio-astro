@@ -1,15 +1,20 @@
 [
   {
     "id": 1,
-    "title": "Pull light switch with Framer Motion",
+    "title": "Pull light switch animation",
     "summary": "An experimental animation project where you can pull down the moon like a light switch. Once released it will jump back and switch the color-theme.",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquam in ut enim quae fugiat nulla officia quia officiis at eaque soluta ipsum quis ratione ducimus temporibus, harum et! Optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas ipsa rem labore dolores dolor mollitia a laudantium odio ipsam Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas ipsa rem labore dolores dolor mollitia a laudantium odio ipsam Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas ipsa rem labore dolores dolor mollitia a laudantium odio ipsam Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas ipsa rem labore dolores dolor mollitia a laudantium odio ipsam",
+    "description": [
+      "A few years ago I've been casually talking to a friend of mine who needed a website for himself at the time. Sure, I said. No big deal, let's just spin up Wordpress, get a basic theme and you're good to go.",
+      "But a few weeks later he came around the corner and asked if we could make it such that his logo hangs on a string, can be dragged down by the mouse like a light switch and once released would toggle the website's dark-mode. Well, no, you can't do that!. At least that's what I thought at the time.",
+      "What happened thereafter was me day and night trying to figure out how this could actually work. And on the way this world of possibilities opened up to me. I realized how many things you can do with just Web-Technologies and I wanted to learn as much as I could about this. Well, that's the story of why I'm kind of proud of this and really wanted to include it here.",
+      "I now adopted it as a little concept, using a moon svg and two basic vector illustrations which are toggled back and forth using react. I tried multiple things for the animation but found that Framer Motion works amazing for this in it's declarative way. Though I wander if Svelte would be able to handle this natively.",
+      "Of course the color-mode logic is very simple and just a concept. In a real world application I would use something like Tailwind's native darkmode and store user preferences in local storage."
+    ],
     "image": "projects/moon.webp",
     "techstack": [
       ["React", "skill-icons:react-dark"],
       ["Vite", "skill-icons:vite-dark"],
-      ["Framer-motion", "ph:framer-logo"],
-      ["Netlify | SSG", "skill-icons:netlify-dark"]
+      ["Framer-motion", "ph:framer-logo"]
     ],
     "link": "https://moon-switch.netlify.app",
     "github": "https://github.com/Lucaskolinger/framer-motion-darkmode-moon"
@@ -17,42 +22,50 @@
   {
     "id": 2,
     "title": "Casablanca Band",
-    "summary": "Personal website for friends of mine. Live-cover-band Custom Homepage build according to their wishes. Sequi quas ipsa rem labore dolores dolor mollitia a laudantium",
-    "description": "long description",
+    "summary": "Personal website for a Live Cover Band. Custom Homepage design according to their wishes to give them a completely new brand identity.",
+    "description": [
+      "Brand identity",
+      "german",
+      "legacy",
+      "Hat für viel interaktion gesorgt",
+      "tech stack und warum",
+      "Astro ausprobiert"
+    ],
     "image": "projects/casablanca.webp",
     "techstack": [
       ["Astro", "skill-icons:astro"],
       ["Vue", "skill-icons:vuejs-dark"],
-      ["Netlify | SSG", "skill-icons:netlify-dark"]
+      ["SCSS", "skill-icons:sass"]
     ],
     "link": "https://www.casablanca-band.com",
     "github": "https://github.com/Lucaskolinger/casablanca-band"
   },
   {
     "id": 3,
-    "title": "Dreamcapture",
-    "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas ipsa rem labore dolores dolor mollitia a laudantium odio ipsam",
-    "description": "long description",
-    "image": "avatar.webp",
+    "title": "Vanilla JS slider with animated UI",
+    "summary": "A completely animated endless slideshow using only JavaScript and native CSS-animations.",
+    "description": ["long description"],
+    "image": "projects/slider-detail.webp",
+    "detailedImage": "projects/slider-detail.webp",
     "techstack": [
-      ["react", "skill-icons:react-dark"],
-      ["framer-motion", "logos:framer"],
+      ["Vanilla JavaScript", "skill-icons:javascript"],
       ["Astro", "skill-icons:astro"]
     ],
-    "link": "www.google.de",
-    "github": "www.moin.de"
+    "link": "https://vanilla-js-slider-ui.netlify.app/",
+    "github": "https://github.com/Lucaskolinger/vanilla-js-slider-ui-astro"
   },
   {
     "id": 4,
-    "title": "Framer Motion Theme Switcher",
-    "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas ipsa rem labore dolores dolor mollitia a laudantium odio ipsam",
-    "description": "long description",
-    "image": "avatar.webp",
+    "title": "Terminal styled contact form",
+    "summary": "A contact form written is Svelte which looks and behaves like a terminal window. Because why not? :)",
+    "description": ["long description", "Wanted to try out svelte"],
+    "image": "projects/terminal.webp",
+    "detailedImage": "projects/terminal.webp",
     "techstack": [
-      ["react", "skill-icons:react-dark"],
-      ["framer-motion", "logos:framer"]
+      ["Svelte", "skill-icons:svelte"],
+      ["Vite", "skill-icons:vite-dark"]
     ],
-    "link": "www.google.de",
-    "github": "www.moin.de"
+    "link": "https://terminal-form.netlify.app/",
+    "github": "https://github.com/Lucaskolinger/terminal-styled-contact-form"
   }
 ]

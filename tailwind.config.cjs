@@ -5,12 +5,10 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
-      screens: {
-        "-sm": { max: "767px" },
-      },
       fontFamily: {
-        deco: ['"Roboto Slab"', ...defaultTheme.fontFamily.sans],
-        main: ['"Roboto Slab"', ...defaultTheme.fontFamily.sans],
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+        deco: ["Roboto Slab", ...defaultTheme.fontFamily.sans],
+        main: ["Roboto Slab", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         neutral: {

@@ -18,33 +18,35 @@ export default function Modal({ link, github, description }) {
         ease: [0.86, 0, 0.07, 1],
         delay: 0.2,
       }}
-      className="overflow-y-scroll text-primary-light sm:row-start-2 bg-neutral-light/80 py-4 px-8 rounded-2xl"
+      className="overflow-y-scroll rounded-2xl bg-neutral-light/80 py-10 px-10 font-main text-primary-light sm:row-start-2"
     >
-      <div className="flex items-center gap-8 mb-4 ml-4">
-        <motion.a
-          target="_blank"
-          whileHover={{ scale: 1.2 }}
-          className="w-8"
-          href={link}
-        >
-          <Icon
-            icon="material-symbols:link-sharp"
-            width="1.8rem"
-            color="white"
-          />
-        </motion.a>
-        <motion.a
-          target="_blank"
-          whileHover={{ scale: 1.2 }}
-          className="w-8"
-          href={github}
-        >
-          <Icon icon="mdi:github" width="1.5rem" color="white" />
-        </motion.a>
+      <div className="mb-4 flex flex-col items-start gap-4 min-[480px]:flex-row min-[480px]:items-center sm:flex-col sm:items-start lg:flex-row lg:items-center">
+        <a target="_blank" href={link}>
+          <div className="flex items-center gap-4 rounded-full bg-neutral-dark px-6 py-3">
+            <p>Try live demo</p>
+            <motion.div whileHover={{ scale: 1.1 }}>
+              <Icon
+                icon="material-symbols:link-sharp"
+                width="1.8rem"
+                color="white"
+              />
+            </motion.div>
+          </div>
+        </a>
+        <a target="_blank" href={github}>
+          <div className="flex items-center gap-4 rounded-full bg-neutral-dark px-6 py-3">
+            <p>See the code</p>
+            <motion.div whileHover={{ scale: 1.2 }}>
+              <Icon icon="mdi:github" width="1.5rem" color="white" />
+            </motion.div>
+          </div>
+        </a>
       </div>
-      <p className="font-main font-normal text-base leading-7 lg:text-lg">
-        {description}
-      </p>
+      <div className="font-main text-base font-normal leading-7 lg:text-lg">
+        {description.map((paragraph) => (
+          <p className="mt-4">{paragraph}</p>
+        ))}
+      </div>
     </motion.div>
   );
 }

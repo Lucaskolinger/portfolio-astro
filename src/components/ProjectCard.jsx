@@ -31,11 +31,23 @@ export default function ProjectCard({ project }) {
           behavior: "smooth",
         });
       }}
-      className="aspect-square border-neutral-accent border-[1px] bg-neutral-light hover:bg-neutral-accent transition-all rounded-2xl text-primary-light cursor-pointer pt-2 pb-4 px-2 "
+      initial={{
+        opacity: 0,
+        translateX: 15,
+      }}
+      animate={{
+        opacity: 1,
+        translateX: 0,
+        transition: {
+          duration: 0.25,
+          ease: "easeIn",
+        },
+      }}
+      className="aspect-square cursor-pointer rounded-2xl border-[1px] border-neutral-accent bg-neutral-light px-2 pt-2 pb-4 text-primary-light transition-all hover:bg-neutral-accent "
     >
       <div
         ref={scrollImageRef}
-        className="aspect-square overflow-scroll rounded-2xl scrollbar-hide"
+        className="scrollbar-hide aspect-square overflow-scroll rounded-2xl"
       >
         <img
           src={project.image}
@@ -43,16 +55,16 @@ export default function ProjectCard({ project }) {
           className="w-full rounded-2xl"
         />
       </div>
-      <h1 className="text-xl font-deco font-semibold mt-4 px-2">
+      <h1 className="mt-4 px-2 font-deco text-xl font-semibold">
         {project.title}
       </h1>
-      <p className="font-main mt-2 font-light text-primary-muted px-2">
+      <p className="mt-2 px-2 font-main font-light text-primary-muted">
         {project.summary}
       </p>
-      <div className="flex gap-2 w-full items-center mt-4 justify-start text-primary-muted flex-wrap">
+      <div className="mt-4 flex w-full flex-wrap items-center justify-start gap-2 text-primary-muted">
         {project.techstack.map((tag) => (
           <div
-            className="flex gap-2 items-center border-[1px] px-2 rounded-xl border-dotted border-primary-muted"
+            className="flex items-center gap-2 rounded-xl border-[1px] border-dotted border-primary-muted px-2"
             key={tag[0]}
           >
             <Icon icon={tag[1]} width="1rem" />

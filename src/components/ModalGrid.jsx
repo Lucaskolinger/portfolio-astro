@@ -15,12 +15,14 @@ export default function ModalGrid() {
         onClick={() => {
           selectedModal.set(null);
         }}
-        className="fixed flex mx-8 justify-center bg-neutral-dark/90 inset-0"
+        className="fixed inset-0 mx-8 flex justify-center bg-neutral-dark/95"
       >
-        <div className="custom-grid-modal sm:custom-grid-modal-2 max-w-6xl mt-4 mb-8 w-full">
+        <div className="custom-grid-modal sm:custom-grid-modal-2 mt-4 mb-8 w-full max-w-6xl">
           <CloseModalBtn />
           <ModalTitle title={$selectedModal.title} />
-          <ModalMainImage image={$selectedModal.image} />
+          <ModalMainImage
+            image={$selectedModal.detailedImage || $selectedModal.image}
+          />
           <ModalInfo
             link={$selectedModal.link}
             github={$selectedModal.github}

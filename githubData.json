@@ -1,5 +1,14 @@
 [
   {
-    "id": 1
+    "id": 1,
+    "link": "www.google.de",
+    "title": "Lucaskolinger/dreamcapture-v1",
+    "description": "First version of a personal Website for a friend of mine who produces movies. It was one of my first bigger projects where I learned a lot of the core concepts of CSS and Vue js. It was a big playground for me and it's accordingly messy."
+  },
+  {
+    "id": 2,
+    "link": "www.google.de",
+    "title": "Lucaskolinger/dreamcapture-v1",
+    "description": "First version of a personal Website for a friend of mine who produces movies. It was one of my first bigger projects where I learned a lot of the core concepts of CSS and Vue js. It was a big playground for me and it's accordingly messy."
   }
 ]

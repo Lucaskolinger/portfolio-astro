@@ -1,10 +1,14 @@
 import { motion } from "framer-motion";
-import { Icon } from "@iconify/react";
 
 export default function ModalMainImage({ title }) {
   return (
-    <h3 className="font-main text-primary-light font-semibold max-w-[80%] sm:max-w-[200%] sm:w-[200%] pb-4 text-xl lg:text-2xl">
+    <motion.h3
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: [0.86, 0, 0.07, 1] }}
+      className="max-w-[80%] pb-4 font-main text-xl font-semibold text-primary-light sm:w-[200%] sm:max-w-[200%] lg:mt-4 lg:text-2xl"
+    >
       {title}
-    </h3>
+    </motion.h3>
   );
 }
