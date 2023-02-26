@@ -1,14 +1,50 @@
 [
   {
     "id": 1,
-    "link": "www.google.de",
-    "title": "Lucaskolinger/dreamcapture-v1",
-    "description": "First version of a personal Website for a friend of mine who produces movies. It was one of my first bigger projects where I learned a lot of the core concepts of CSS and Vue js. It was a big playground for me and it's accordingly messy."
+    "link": "https://github.com/Lucaskolinger/terminal-styled-contact-form",
+    "title": "Lucaskolinger/terminal-styled-contact-form",
+    "description": "Concept for a creative contact form styled and usable like a terminal window. Build in Svelte with Vite."
   },
   {
     "id": 2,
-    "link": "www.google.de",
+    "link": "https://github.com/Lucaskolinger/vanilla-js-slider-ui-astro",
+    "title": "Lucaskolinger/vanilla-js-slider-ui-astro",
+    "description": "Animated slideshow built in vanilla Js without Frameworks besides astro."
+  },
+  {
+    "id": 3,
+    "link": "https://github.com/Lucaskolinger/portfolio-astro",
+    "title": "Lucaskolinger/portfolio-astro",
+    "description": "Source code for my personal website, this site in fact, which uses astro with react and Framer-motion."
+  },
+  {
+    "id": 4,
+    "link": "https://github.com/Lucaskolinger/framer-motion-darkmode-moon",
+    "title": "Lucaskolinger/framer-motion-darkmode-moon",
+    "description": "Animation concept using react with the Framer motion library. You can drag down the moon in order to toggle the color mode."
+  },
+  {
+    "id": 5,
+    "link": "https://github.com/Lucaskolinger/dreamcapture-astro",
+    "title": "Lucaskolinger/dreamcapture-astro",
+    "description": "Current repo for the website www-dreamcapture.de, personal website for a friend of mine. We're trying out a lot of things but it still takes a while to be finished."
+  },
+  {
+    "id": 6,
+    "link": "https://github.com/Lucaskolinger/casablanca-band",
+    "title": "Lucaskolinger/casablanca-band",
+    "description": "Source code for the website www.casablanca-band.com. I did a full redesign of their website in fall 2022."
+  },
+  {
+    "id": 7,
+    "link": "https://github.com/Lucaskolinger/dreamcapture-v1",
     "title": "Lucaskolinger/dreamcapture-v1",
-    "description": "First version of a personal Website for a friend of mine who produces movies. It was one of my first bigger projects where I learned a lot of the core concepts of CSS and Vue js. It was a big playground for me and it's accordingly messy."
+    "description": "Older version of a personal Website for a friend of mine who produces movies. It was one of my first bigger projects where I learned a lot of the core concepts especially of CSS, but it were also my first steps learning Vue.js through Nuxt. It was a big playground for me and it's accordingly messy."
+  },
+  {
+    "id": 8,
+    "link": "https://github.com/Lucaskolinger/wartungsarbeiten",
+    "title": "Lucaskolinger/wartungsarbeiten",
+    "description": "Just a simple html and CSS Template which displays that the site is temporarily under construction."
   }
 ]

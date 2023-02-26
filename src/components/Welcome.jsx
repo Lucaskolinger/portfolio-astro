@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function Welcome() {
   return (
     <main className="scrollbar-hide flex w-full flex-col items-center lg:h-screen lg:overflow-y-scroll lg:pb-8">
-      <div className="mt-16 flex h-max w-4/5 max-w-lg flex-col items-center gap-8 md:flex-row lg:flex-col xl:flex-row">
+      <div className="mt-16 flex h-max w-4/5 max-w-lg flex-col items-center gap-8 md:flex-row lg:flex-col">
         <motion.img
           whileHover={{
             scale: 1.025,
@@ -22,11 +22,11 @@ export default function Welcome() {
               duration: 0.5,
             },
           }}
-          className="aspect-square w-24 rounded-md"
+          className="aspect-square w-32 rounded-md"
           src="avatar.webp"
           alt="Lucas Kolinger | Frontend Web Developer"
         />
-        <div className="font-deco text-3xl">
+        <div className="font-deco text-4xl">
           <motion.p
             initial={{ opacity: 0, translateX: -10 }}
             animate={{

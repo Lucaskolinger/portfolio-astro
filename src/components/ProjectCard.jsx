@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { selectedModal } from "../modalStore";
-import { Icon } from "@iconify/react";
 import { useRef } from "react";
+import TechstackTag from "./TechstackTag";
 
 export default function ProjectCard({ project }) {
   const scrollImageRef = useRef(null);
@@ -62,14 +62,8 @@ export default function ProjectCard({ project }) {
         {project.summary}
       </p>
       <div className="mt-4 flex w-full flex-wrap items-center justify-start gap-2 text-primary-muted">
-        {project.techstack.map((tag) => (
-          <div
-            className="flex items-center gap-2 rounded-xl border-[1px] border-dotted border-primary-muted px-2"
-            key={tag[0]}
-          >
-            <Icon icon={tag[1]} width="1rem" />
-            <p>{tag[0]}</p>
-          </div>
+        {project.techstack.map((tagArray) => (
+          <TechstackTag tagArray={tagArray} />
         ))}
       </div>
     </motion.article>

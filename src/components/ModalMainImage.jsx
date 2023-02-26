@@ -17,7 +17,7 @@ export default function ModalMainImage({ image }) {
         duration: 0.5,
         ease: [0.86, 0, 0.07, 1],
       }}
-      className="overflow-y-scroll scrollbar-hide rounded-2xl row-start-2 md:row-start-2 row-span-1"
+      className="scrollbar-hide row-span-1 row-start-2 overflow-y-scroll rounded-2xl md:row-start-2"
     >
       <img src={image} alt="Project Image" className="rounded-2xl" />
     </motion.div>

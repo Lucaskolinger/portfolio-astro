@@ -1,0 +1,72 @@
+---
+import ResumeEntryRow from "../components/ResumeEntryRow";
+import ResumeHeader from "../components/ResumeHeader.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Lucas Kolinger | Resume | Frontend Developer">
+  <div
+    class="select-light flex h-screen w-full justify-center bg-gray-100 bg-repeat font-main text-gray-900 heropattern-circuitboard-slate-200 print:text-[15pt]"
+  >
+    <div
+      class="my-8 overflow-y-scroll rounded-2xl border-2 border-gray-300 bg-gray-100 px-4 py-8 print:border-none"
+    >
+      <ResumeHeader />
+      <div>
+        <h2 class="my-4 text-xl font-bold">Education & Certifications</h2>
+        <ResumeEntryRow
+          client:load
+          head="Completion of Frontend Development related online-courses"
+          links={["jiasojsiodjas", "fdiaojdsaoidj"]}
+          linksText={[
+            "JavaScript - The Complete Guide",
+            "CSS - The Complete Guide",
+          ]}
+          from="2020"
+          to="2022"
+        />
+        <ResumeEntryRow
+          client:load
+          head="A levels (Abitur)"
+          body="Josef Effner Gymnasium (Germany)"
+          from="2019"
+          to="2021"
+        />
+        <h2 class="my-4 text-xl font-bold">Coding Expertise</h2>
+        <ResumeEntryRow
+          client:load
+          head="Completion of Frontend Development related online-courses"
+          links={["jiasojsiodjas", "fdiaojdsaoidj"]}
+          linksText={[
+            "JavaScript - The Complete Guide",
+            "CSS - The Complete Guide",
+          ]}
+          from="2020"
+          to="2022"
+        />
+        <ResumeEntryRow
+          client:load
+          head="A levels (Abitur)"
+          body="Josef Effner Gymnasium (Germany)"
+          from="2019"
+          to="2021"
+        />
+        <h2 class="my-4 text-xl font-bold">Work Experience</h2>
+        <ResumeEntryRow
+          client:load
+          head="Globetrotter Ausrüstung (Germany)"
+          body="Side job as a salesman for outdoor-equipment where I could gain a lot of experience in team playing and communication."
+          from="2017"
+          to="2022"
+        />
+        <ResumeEntryRow
+          client:load
+          head="A levels (Abitur)"
+          body="Relocation to croatian countryside in order to realize several projects related to sustainable agriculture and rural tourism."
+          from="2022"
+          to="Present"
+        />
+      </div>
+    </div>
+  </div>
+</MainLayout>

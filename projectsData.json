@@ -5,7 +5,7 @@
     "summary": "An experimental animation project where you can pull down the moon like a light switch. Once released it will jump back and switch the color-theme.",
     "description": [
       "A few years ago I've been casually talking to a friend of mine who needed a website for himself at the time. Sure, I said. No big deal, let's just spin up Wordpress, get a basic theme and you're good to go.",
-      "But a few weeks later he came around the corner and asked if we could make it such that his logo hangs on a string, can be dragged down by the mouse like a light switch and once released would toggle the website's dark-mode. Well, no, you can't do that!. At least that's what I thought at the time.",
+      "But a few weeks later he came around the corner and asked if we could make it such that his logo hangs on a string, can be dragged down by the mouse like a light switch and once released would toggle the website's dark-mode. Well, no, you can't do that! At least that's what I thought at the time.",
       "What happened thereafter was me day and night trying to figure out how this could actually work. And on the way this world of possibilities opened up to me. I realized how many things you can do with just Web-Technologies and I wanted to learn as much as I could about this. Well, that's the story of why I'm kind of proud of this and really wanted to include it here.",
       "I now adopted it as a little concept, using a moon svg and two basic vector illustrations which are toggled back and forth using react. I tried multiple things for the animation but found that Framer Motion works amazing for this in it's declarative way. Though I wander if Svelte would be able to handle this natively.",
       "Of course the color-mode logic is very simple and just a concept. In a real world application I would use something like Tailwind's native darkmode and store user preferences in local storage."
@@ -44,7 +44,13 @@
     "id": 3,
     "title": "Vanilla JS slider with animated UI",
     "summary": "A completely animated endless slideshow using only JavaScript and native CSS-animations.",
-    "description": ["long description"],
+    "description": [
+      "I wanted to build a slider for a friend's website. It should adopt to every screen size, have optional autoplay, scroll endlessly and have a nice transition. Potentially also a way of filtering images. So far that's nothing too complex, I tried using a library called Swiper.js which worked perfectly fine after a few minutes. But the downside is that it's at least in my experience a bit cumbersome to hook into the ui-controls and make them do exactly what you want.",
+      "That's when I got the idea of building this thing on my own. To refresh my knowledge and see how far I can personally get only using native web technologies. We wanted kind of a specific UI-behavior. It should slide in from different sides of the pages whenever a user klicks on the screen, automatically slide out after a certain time and also automatically slide in once the section is in view and of course always reset the timeout once a user interacts with it.",
+      "Sounds not that big of a deal but I was once again surprised how complex stuff can get using this imperative way, trivial things like getting this freaking button not to be clickable when the animation is running.",
+      "I see it more as an experiment, I learned a few new things about event delegation and Intersection observers. It works great but I once again really appreciate certain things you get from Frontend-Frameworks like React or Vue. And I also love Framer Motion and GSAP for animation even more now.",
+      "In production it should be used to display running videos and still feature a bit more filter-functionality, which has it's very own challenges. For now it displays a few beautiful images from pixabay."
+    ],
     "image": "projects/slider-detail.webp",
     "detailedImage": "projects/slider-detail.webp",
     "techstack": [
@@ -58,7 +64,12 @@
     "id": 4,
     "title": "Terminal styled contact form",
     "summary": "A contact form written is Svelte which looks and behaves like a terminal window. Because why not? :)",
-    "description": ["long description", "Wanted to try out svelte"],
+    "description": [
+      "I recently kind of went away from creating contact forms. Honestly I never really liked them, to me they just felt like this old way of contacting people which nobody really uses any more. I like this copy-to-clipboard approch and the fact that many simple websites can remain fully static this way.",
+      "So when I asked myself if I wanted a contact form on my personal website I thought of something a bit more creative which might even give some recognition value.",
+      "Related to coding I came up with this terminal concept, where you get prompted with your contact information and the next question would only pop um once the previous one is answered and validated.",
+      "I am also very interested in learning Svelte, so I decided to give it a shot. The form doesn't do too much with the data right now besides logging a basic object with contact data to the console and showing an alert."
+    ],
     "image": "projects/terminal.webp",
     "detailedImage": "projects/terminal.webp",
     "techstack": [

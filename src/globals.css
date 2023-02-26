@@ -6,10 +6,6 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-::selection {
-  background-color: hsl(245, 17%, 15%);
-}
-
 @layer utilities {
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
@@ -27,5 +23,11 @@
   .custom-grid-modal-2 {
     grid-template-rows: max-content 1fr;
     grid-template-columns: 1fr 1fr;
+  }
+  .select-dark ::selection {
+    background-color: hsl(245, 17%, 15%);
+  }
+  .select-light ::selection {
+    background-color: hsl(245, 100%, 87%);
   }
 }

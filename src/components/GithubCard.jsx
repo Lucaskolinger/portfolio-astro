@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Icon } from "@iconify/react";
 
 export default function Aside({ repodata }) {
   return (

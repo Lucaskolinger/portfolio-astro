@@ -1,24 +1,10 @@
 ---
 import MainGrid from "../components/MainGrid";
-import "../globals.css";
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lucas Kolinger | Frontend Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-  </head>
-  <body class="flex items-center justify-center bg-neutral-dark">
+<MainLayout title="Lucas Kolinger | Frontend Developer">
+  <div class="select-dark flex items-center justify-center bg-neutral-dark">
     <MainGrid client:load />
-  </body>
-</html>
+  </div>
+</MainLayout>
