@@ -6,10 +6,10 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 <MainLayout title="Lucas Kolinger | Resume | Frontend Developer">
   <div
-    class="select-light flex h-screen w-full justify-center bg-gray-100 bg-repeat font-main text-gray-900 heropattern-circuitboard-slate-200 print:text-[15pt]"
+    class="select-light m-4 flex justify-center rounded-2xl bg-gray-100 bg-repeat font-main text-gray-900 heropattern-circuitboard-slate-200 print:text-[12pt]"
   >
     <div
-      class="my-8 overflow-y-scroll rounded-2xl border-2 border-gray-300 bg-gray-100 px-4 py-8 print:border-none"
+      class="my-8 rounded-2xl border-2 border-gray-300 bg-gray-100 px-4 py-8 shadow-md print:my-0 print:border-none print:p-0"
     >
       <ResumeHeader />
       <div>
@@ -32,33 +32,26 @@ import MainLayout from "../layouts/MainLayout.astro";
           from="2019"
           to="2021"
         />
-        <h2 class="my-4 text-xl font-bold">Coding Expertise</h2>
-        <ResumeEntryRow
-          client:load
-          head="Completion of Frontend Development related online-courses"
-          links={["jiasojsiodjas", "fdiaojdsaoidj"]}
-          linksText={[
-            "JavaScript - The Complete Guide",
-            "CSS - The Complete Guide",
-          ]}
-          from="2020"
-          to="2022"
-        />
-        <ResumeEntryRow
-          client:load
-          head="A levels (Abitur)"
-          body="Josef Effner Gymnasium (Germany)"
-          from="2019"
-          to="2021"
-        />
+        <h2 class="mb-1 ml-2 font-medium">Language Skills</h2>
+        <p class="ml-2 text-gray-700">
+          German (native) | English (fluent) | Croatian (CEFR A2) | French (CEFR
+          A1)
+        </p>
+        <h2 class="mt-4 mb-2 text-xl font-bold">Coding Expertise</h2>
+        <p
+          class="max-w-xl rounded-lg border-[0.5px] border-gray-300 p-4 text-gray-700 shadow-md print:border-none"
+        >
+          I am a self taught, solution oriented developer with main emphasis on
+          Frontend JavaScript development who is eager to learn new things and
+          loves cutting edge technology.
+        </p>
+        <h2 class="mb-1 mt-4 ml-2 font-medium">Technologies</h2>
+        <p class="ml-2 mb-4 max-w-xl text-gray-700">
+          HTML, CSS/SCSS/Tailwind, JavaScript, Typescript, React, Vue, Svelte,
+          Git/Npm, Framer-Motion, GSAP, Next.js, Nuxt.js, Astro.build, Vite,
+          Webpack, Web Components, Lit
+        </p>
         <h2 class="my-4 text-xl font-bold">Work Experience</h2>
-        <ResumeEntryRow
-          client:load
-          head="Globetrotter Ausrüstung (Germany)"
-          body="Side job as a salesman for outdoor-equipment where I could gain a lot of experience in team playing and communication."
-          from="2017"
-          to="2022"
-        />
         <ResumeEntryRow
           client:load
           head="A levels (Abitur)"
@@ -66,7 +59,26 @@ import MainLayout from "../layouts/MainLayout.astro";
           from="2022"
           to="Present"
         />
+        <ResumeEntryRow
+          client:load
+          head="Globetrotter Ausrüstung (Germany)"
+          body="Side job as a salesman for outdoor-equipment where I could gain a lot of experience in team playing and communication."
+          from="2017"
+          to="2022"
+        />
       </div>
+      <button
+        id="printBtn"
+        class="mt-4 rounded-xl bg-neutral-dark py-2 px-4 text-primary-light shadow-md hover:bg-neutral-accent print:hidden"
+        >Print Resume</button
+      >
     </div>
   </div>
 </MainLayout>
+
+<script>
+  const printBtn = document.getElementById("printBtn");
+  printBtn.addEventListener("click", () => {
+    window.print();
+  });
+</script>

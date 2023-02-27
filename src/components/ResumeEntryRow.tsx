@@ -18,7 +18,7 @@ export default function ResumeEntryRow({
   linksText = [],
 }) {
   return (
-    <div className="mb-4 flex max-w-max items-center gap-4 rounded-lg border-[0.5px] border-gray-300 py-2 pl-2 pr-8">
+    <div className="mb-4 flex max-w-max items-center gap-4 rounded-lg border-[0.5px] border-gray-300 py-2 pl-2 pr-8 shadow-md print:mb-0 print:border-none">
       <div className="flex w-20 flex-col items-center rounded-lg p-2 text-gray-700">
         <p>{from}</p>
         <Icon icon="material-symbols:arrow-drop-down" />
