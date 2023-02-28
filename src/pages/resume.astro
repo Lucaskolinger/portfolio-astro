@@ -2,6 +2,7 @@
 import ResumeEntryRow from "../components/ResumeEntryRow";
 import ResumeHeader from "../components/ResumeHeader.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import ResumeCourseCard from "../components/ResumeCourseCard";
 ---
 
 <MainLayout title="Lucas Kolinger | Resume | Frontend Developer">
@@ -14,17 +15,7 @@ import MainLayout from "../layouts/MainLayout.astro";
       <ResumeHeader />
       <div>
         <h2 class="mb-2 text-xl font-bold">Education & Certifications</h2>
-        <ResumeEntryRow
-          client:load
-          head="Completion of Frontend Development related online-courses"
-          links={["udemy/js-certificate.webp", "udemy/css-certificate.webp"]}
-          linksText={[
-            "JavaScript - The Complete Guide",
-            "CSS - The Complete Guide",
-          ]}
-          from="2020"
-          to="2022"
-        />
+        <ResumeCourseCard client:load />
         <ResumeEntryRow
           client:load
           head="A levels (Abitur)"
@@ -37,26 +28,27 @@ import MainLayout from "../layouts/MainLayout.astro";
           German (native) | English (fluent) | Croatian (CEFR A2) | French (CEFR
           A1)
         </p>
-        <h2 class="mt-4 mb-2 text-xl font-bold print:mt-2 print:mb-0">
+        <h2 class="mt-4 mb-2 text-xl font-bold print:mt-2 print:mb-1">
           Coding Expertise
         </h2>
         <p
-          class="max-w-xl rounded-lg border-[0.5px] border-gray-300 p-4 text-gray-700 shadow-md print:border-none print:pl-0 print:shadow-none"
+          class="max-w-xl rounded-lg border-[0.5px] border-gray-300 p-4 text-gray-700 shadow-md print:border-none print:p-0 print:shadow-none"
         >
-          I am a self taught, solution oriented developer with main emphasis on
-          Frontend JavaScript development who is eager to learn new things and
-          loves cutting edge technology.
+          I am a self-taught, solution oriented developer with main emphasis on
+          Frontend JavaScript development. I'm eager to learn new things every
+          day and love cutting-edge technology and good user experiences.
         </p>
         <h2 class="mb-1 mt-4 ml-2 font-medium print:ml-0">Technologies</h2>
         <p class="ml-2 mb-4 max-w-xl text-gray-700 print:ml-0">
           HTML, CSS/SCSS/Tailwind, JavaScript, Typescript, React, Vue, Svelte,
-          Git/Npm, Framer-Motion, GSAP, Next.js, Nuxt.js, Astro.build, Vite,
-          Webpack, Markdown, Web Components, Lit
+          Sveltekit, Git/Npm, Framer-Motion, GSAP, Next.js, Nuxt.js,
+          Astro.build, Vite, Webpack, Markdown, Web Components, Lit, Photoshop,
+          Illustrator, Adobe XD, Figma
         </p>
         <h2 class="mt-4 mb-2 text-xl font-bold">Work Experience</h2>
         <ResumeEntryRow
           client:load
-          head="Projects Abroad"
+          head="Realizing personal projects"
           body="Relocation to croatian countryside in order to realize several projects related to sustainable agriculture and rural tourism."
           from="2022"
           to="Present"
@@ -71,11 +63,11 @@ import MainLayout from "../layouts/MainLayout.astro";
       </div>
       <button
         id="printBtn"
-        class="mt-4 hidden rounded-xl bg-neutral-dark py-2 px-4 text-primary-light shadow-md hover:bg-neutral-accent print:hidden sm:inline"
+        class="mt-4 rounded-xl bg-neutral-dark py-2 px-4 text-primary-light shadow-md hover:bg-neutral-accent print:hidden print:shadow-none"
         >Print Resume</button
       >
       <a
-        class="ml-4 rounded-xl border-2 border-neutral-dark py-2 px-4 shadow-md print:hidden"
+        class="ml-4 rounded-xl border-2 border-neutral-dark py-2 px-4 shadow-md print:hidden print:shadow-none"
         href="/"
       >
         Back to home</a

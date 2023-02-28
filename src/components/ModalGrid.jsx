@@ -15,7 +15,7 @@ export default function ModalGrid() {
         onClick={() => {
           selectedModal.set(null);
         }}
-        className="fixed inset-0 mx-8 flex justify-center bg-neutral-dark/95"
+        className="fixed inset-0 flex justify-center bg-neutral-dark/95 sm:px-8"
       >
         <div className="custom-grid-modal sm:custom-grid-modal-2 mt-4 mb-8 w-full max-w-6xl">
           <CloseModalBtn />

@@ -22,7 +22,7 @@
   {
     "id": 2,
     "title": "Casablanca Band",
-    "summary": "Personal website for a Live Cover Band. Custom Homepage design according to their wishes to give them a completely new brand identity.",
+    "summary": "Personal website for a Live Cover Band. Custom Homepage design according to their wishes giving them a completely new brand identity.",
     "description": [
       "This task was about taking a friend's band's old legacy website and refreshign it with a new design. I should incorporate a new brand identity and simplify the navigation and booking-process for their potential customers. Also I wanted to migrate it to Netlify in order to host it for free.",
       "The website was completely build upon the band members' wishes, so we decided to go for a simple onepager without a navigation. The contacting process simply works through copy and pasting the contact data to the clipboard, which removes the need for a dedicated contact form.",

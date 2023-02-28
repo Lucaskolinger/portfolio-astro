@@ -63,7 +63,10 @@ export default function ProjectCard({ project }) {
       </p>
       <div className="mt-4 flex w-full flex-wrap items-center justify-start gap-2 text-primary-muted">
         {project.techstack.map((tagArray) => (
-          <TechstackTag tagArray={tagArray} />
+          <TechstackTag
+            key={tagArray[0] + Math.random().toString()}
+            tagArray={tagArray}
+          />
         ))}
       </div>
     </motion.article>
