@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Icon } from "@iconify/react";
 import TechstackTag from "./TechstackTag";
 
-export default function Aside() {
+export default function ThisProjectCard() {
   return (
     <motion.a
       href="https://github.com/Lucaskolinger/portfolio-astro"

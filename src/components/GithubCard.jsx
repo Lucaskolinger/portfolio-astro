@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function Aside({ repodata }) {
+export default function GithubCard({ repodata }) {
   return (
     <motion.a
       initial={{
@@ -26,10 +26,10 @@ export default function Aside({ repodata }) {
       href={repodata.link}
       target="_blank"
     >
-      <h3 className="mb-2 text-xl font-semibold text-primary-light">
+      <h3 className="mb-2  text-xl font-semibold text-primary-light">
         {repodata.title}
       </h3>
-      <p className="font-light">{repodata.description}</p>
+      <p className="max-w-lg font-light">{repodata.description}</p>
     </motion.a>
   );
 }

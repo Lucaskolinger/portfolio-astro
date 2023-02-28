@@ -24,7 +24,7 @@ module.exports = {
           light: "hsla(30, 4%, 91%, 1)",
           muted: "hsla(216, 13%, 53%, 1)",
         },
-        accent: "hsla(216, 95%, 85%, 1)",
+        accent: "hsla(216, 100%, 80%, 1)",
       },
     },
   },
