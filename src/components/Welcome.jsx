@@ -93,20 +93,12 @@ export default function Welcome() {
         className="mt-12 w-4/5 max-w-lg font-main text-base font-normal text-primary-muted"
       >
         <p className="leading-7">
-          Believe me or not but a bit over three years ago I accidently
-          discovered that web-development is way more than just
-          Wordpress-themes. I since then became obsessed with modern
-          web-technologies and all the possibilities they give us to make
-          immersive and truly puroseful experiences become reality.
+          Believe me or not but a bit over three years ago I accidentally
+          discovered that web development is way more than just
+          Wordpress-themes. I have since then become obsessed with modern web
+          technologies and all the possibilities they give us to make immersive
+          and truly purposeful experiences become reality.
         </p>
-        {/* in front of screen */}
-        {/* multimedia */}
-        {/* little details */}
-        {/* I realized there
-          are so many little things playing together */}
-        {/* Always learning */}
-        {/* I never stop learning */}
-        {/* Making ideas work/come true */}
         <p className="pt-4 leading-7"></p>
       </motion.div>
       <motion.div
