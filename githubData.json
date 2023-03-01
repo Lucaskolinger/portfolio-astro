@@ -9,25 +9,25 @@
     "id": 2,
     "link": "https://github.com/Lucaskolinger/vanilla-js-slider-ui-astro",
     "title": "Lucaskolinger/vanilla-js-slider-ui-astro",
-    "description": "Animated slideshow built in vanilla Js without Frameworks besides astro."
+    "description": "Animated slideshow built in vanilla Js without Frameworks besides Astro."
   },
   {
     "id": 3,
     "link": "https://github.com/Lucaskolinger/portfolio-astro",
     "title": "Lucaskolinger/portfolio-astro",
-    "description": "Source code for my personal website, this site in fact, which uses astro with react and Framer-motion."
+    "description": "Source code for my personal website, uses Astro with react and Framer-motion."
   },
   {
     "id": 4,
     "link": "https://github.com/Lucaskolinger/framer-motion-darkmode-moon",
     "title": "Lucaskolinger/framer-motion-darkmode-moon",
-    "description": "Animation concept using react with the Framer motion library. You can drag down the moon in order to toggle the color mode."
+    "description": "Animation concept using react with the Framer motion library. You can drag down the moon to toggle the color mode."
   },
   {
     "id": 5,
     "link": "https://github.com/Lucaskolinger/dreamcapture-astro",
     "title": "Lucaskolinger/dreamcapture-astro",
-    "description": "Current repo for the website www-dreamcapture.de, personal website for a friend of mine. We're trying out a lot of things but it still takes a while to be finished."
+    "description": "Current repo for the website www-dreamcapture.de, personal website for a friend of mine. We're still trying out things, still takes a while to be finished."
   },
   {
     "id": 6,
@@ -39,7 +39,7 @@
     "id": 7,
     "link": "https://github.com/Lucaskolinger/dreamcapture-v1",
     "title": "Lucaskolinger/dreamcapture-v1",
-    "description": "Older version of a personal Website for a friend of mine who produces movies. It was one of my first bigger projects where I learned a lot of the core concepts especially of CSS, but it were also my first steps learning Vue.js through Nuxt. It was a big playground for me and it's accordingly messy."
+    "description": "Older version of a friend's personal website. One of my first complete projects, learned a lot, was a big playground for me, accordingly messy."
   },
   {
     "id": 8,
