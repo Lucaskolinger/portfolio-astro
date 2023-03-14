@@ -38,6 +38,7 @@ export default function ThisProjectCard() {
         <TechstackTag tagArray={["React", "skill-icons:react-dark"]} />
         <TechstackTag tagArray={["Framer-motion", "ph:framer-logo"]} />
         <TechstackTag tagArray={["Astro", "skill-icons:astro"]} />
+        <TechstackTag tagArray={["Nanostores"]} />
         <TechstackTag
           tagArray={["Tailwind CSS", "skill-icons:tailwindcss-light"]}
         />
