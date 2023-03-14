@@ -90,12 +90,9 @@ export default function Welcome() {
             duration: 0.25,
           },
         }}
-        className="mt-12 w-4/5 max-w-lg font-main text-base font-normal text-primary-muted"
+        className="mt-4 w-4/5 max-w-lg font-main text-base font-normal text-primary-muted"
       >
-        <p className="leading-7">
-          I am a Web Enthusiast who hates Hamburger Menus.
-        </p>
-        <p className="leading-7">
+        <p className="mt-8 leading-7">
           Believe me or not but a bit over three years ago I accidentally
           discovered that web development is way more than just
           Wordpress-themes. I have since then become obsessed with modern web

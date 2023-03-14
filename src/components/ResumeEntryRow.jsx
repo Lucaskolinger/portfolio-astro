@@ -6,7 +6,7 @@ export default function ResumeEntryRow({ head, body, from, to }) {
   const [image, setImage] = useState(null);
 
   return (
-    <article className="mb-4 flex max-w-max items-center gap-4 rounded-lg border-[0.5px] border-gray-300 py-2 pl-2 pr-8 shadow-md print:mb-0 print:border-none print:shadow-none">
+    <article className="mb-4 flex max-w-max items-center gap-4 rounded-lg border-[0.5px] border-gray-300 py-2 pl-2 pr-8 shadow-md print:mb-0 print:border-none print:py-1 print:shadow-none">
       {image && (
         <div
           onClick={() => {
